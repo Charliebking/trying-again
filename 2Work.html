@@ -30,7 +30,7 @@
 <body>
 
 <div class="sidenav">
-  <a href="index.html">Home</a>
+  <a href="1Home.html">Home</a>
   <a href="2Work.html">Work</a>
         <a href="2recent.html"><i><small>Recent</small></i></c>
     <a href="2memory.html"><i><small>Memory Playground</small></i></c>
@@ -47,22 +47,61 @@
 
 <div class="car">
   <div class="drive">
-   <img src="img/re001.jpg">
+
+  <div class="container">
+<a href="2recent.html">
+   <img src="img/re001.jpg" alt="Recent" class="image">
+  <div class="middle">
+    <div class="text">Recent</div>
+</a>
+</div>
+</div>
+ 
+   
 
   </div>
 
   <div class="drive">
-    <img src="img/mp001.jpg">
-   <img src="img/forlorn.jpg">
+    <div class="container">
+    <a href="2memory.html">
+      <img src="img/mp001.jpg" alt="Recent" class="image">
+       <div class="middle">
+    <div class="text">Memory Playground</div>
+    </a>
+  </div>
+</div>
+
+<div class="container">
+   <a href="2forlorn.html">
+      <img src="img/forlorn.jpg" alt="Recent" class="image">
+       <div class="middle">
+        <div class="text">Frolorn Limbs</div>
+    </a>
    </div>
+ </div>
+</div>
    
    <div class="drive">
-      <img src="img/sc32.jpg">
+    <div class="container">
+      <a href="2scars.html">
+      <img src="img/sc32.jpg" alt="Recent" class="image">
+      <div class="middle">
+        <div class="text">Scars</div>
+    </a>
     </div>
+  </div>
+</div>
 
   <div class="drive">
-    <img src="img/bd002.jpg">
+    <div class="container">
+   <a href="2binding.html">
+    <img src="img/bd002.jpg" alt="Recent" class="image">
+    <div class="middle">
+        <div class="text">Binding</div>
+  </a>
   </div>
+</div>
+</div>
   
 </div>
 </div>
@@ -76,6 +115,35 @@
 
 
 <style>
+
+.container {
+  position: relative;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
+}
+
 
 
 .car {
